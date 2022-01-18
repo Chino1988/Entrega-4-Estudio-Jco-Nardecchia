@@ -537,3 +537,123 @@ body {
 }
 
 /* FIN SECCION CINCO */
+
+/* INICIO FOOTER */
+
+#contactenos {
+    display: flex;
+    border-top: 15px double grey;
+    flex-direction: column;
+    margin-bottom: 15px; 
+}
+
+footer {
+    overflow: hidden;
+}
+
+.cabeza {
+    display: flex;
+    font-family:  'Playfair Display', serif;
+    color: rgba(123, 130, 189, 0.6);
+    text-shadow: .1rem .1rem .1rem #333;
+    font-size: 25px;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    justify-content: center;
+}
+
+.descripcion-contacto {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    background-color: rgba(21, 32, 32, 0.1);
+    border-radius: 6px;
+    border: 1px solid black;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.link-mail {
+    justify-content: center;
+    display: flex;
+}
+.red-ig, .red-wsp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+/* FIN FOOTER */
+
+/* MEDIA QUERIES */
+
+/* MOBILE */
+
+@media only screen and (max-width: 480px) {
+    .menu-container {
+        flex-direction: column;
+    }
+    .lema {
+        display: none;
+    }
+    .img-uno, .img-dos, .img-tres, .img-cuatro {
+        display: none;
+    }
+    .container-nosotros {
+        flex-direction: column;
+    }
+    .img-faq {
+        flex-direction: column;
+    }
+    .img-publi {
+        flex-direction: column;
+    }
+    .img-mail {
+        display: none;
+    }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+    .menu-container {
+        flex-direction: column;
+    }
+    .lema {
+        display: none;
+    }
+    .img-uno, .img-dos, .img-tres, .img-cuatro {
+        box-sizing: content-box;
+    }
+    .contenedor-cortes {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container-nosotros {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .img-faq {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .img-publi {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .img-mail {
+        display: none;
+    }
+}
